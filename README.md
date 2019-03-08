@@ -29,7 +29,7 @@ Vayne is a folder structure for Wordpress implement [Bedrock](https://github.com
   * `WP_SITEURL` - Full URL to WordPress including subdirectory (https://example.com/back_office)
   * `AUTH_KEY`, `SECURE_AUTH_KEY`, `LOGGED_IN_KEY`, `NONCE_KEY`, `AUTH_SALT`, `SECURE_AUTH_SALT`, `LOGGED_IN_SALT`, `NONCE_SALT`
 
-  If you want to automatically generate the security keys (assuming you have wp-cli installed locally) you can use the very handy [wp-cli-dotenv-command][https://github.com/aaemnnosttv/wp-cli-dotenv-command]:
+  If you want to automatically generate the security keys (assuming you have wp-cli installed locally) you can use the very handy [wp-cli-dotenv-command](https://github.com/aaemnnosttv/wp-cli-dotenv-command):
 
       wp package install aaemnnosttv/wp-cli-dotenv-command
 
