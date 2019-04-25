@@ -18,12 +18,17 @@ Vayne is a folder structure for Wordpress implement [Bedrock](https://github.com
 
 ## Installation
 
-1. Run "composer install" to install the dependency package.
+1. Create a new project
+```sh
+$ composer create-project rafadiot/vayne
+```
+
 2. Update environment variables in `.env`  file:
   * `DB_NAME` - Database name
-  * `DB_USER` - Database user
-  * `DB_PASSWORD` - Database password
-  * `DB_HOST` - Database host
+    * `DB_USER` - Database user
+    * `DB_PASSWORD` - Database password
+    * `DB_HOST` - Database host
+    * Optionally, you can define DATABASE_URL for using a DSN instead of using the variables above (e.g. `mysql://user:password@127.0.0.1:3306/db_name`)
   * `WP_ENV` - Set to environment (`development`, `staging`, `production`)
   * `WP_HOME` - Full URL to WordPress home (https://example.com)
   * `WP_SITEURL` - Full URL to WordPress including subdirectory (https://example.com/back_office)
