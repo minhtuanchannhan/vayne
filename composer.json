@@ -1,5 +1,5 @@
 {
-    "name": "minhtuanchannhan/vayne",
+    "name": "rafadiot/vayne",
     "type": "project",
     "license": "MIT",
     "description": "Vayne is a folder structure for Wordpress implement Bedrock.",
@@ -7,17 +7,17 @@
         {
             "name": "Tuan Le Minh",
             "email": "minhtuanchannhan@gmail.com",
-            "homepage": "https://github.com/minhtuanchannhan"
+            "homepage": "https://github.com/rafadiot"
         }
     ],
     "keywords": [
         "vayne",
-        "minhtuanchannhan",
+        "rafadiot",
         "wordpress folder structure",
         "bedrock"
     ],
     "support": {
-        "issues": "https://github.com/minhtuanchannhan/vayne/issues"
+        "issues": "https://github.com/rafadiot/vayne/issues"
     },
     "config": {
         "preferred-install": "dist"
