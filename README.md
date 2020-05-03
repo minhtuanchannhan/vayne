@@ -42,6 +42,6 @@ $ composer create-project rafadiot/vayne
 
   Or, you can cut and paste from the [Roots WordPress Salt Generator](https://roots.io/salts.html).
 
-3. Add theme(s) in `web/app/themes` as you would for a normal WordPress site. You can use [Rafadiot theme](https://github.com/minhtuanchannhan/rafadiot).
-4. Set your site vhost document root to `/path/to/site/web/` (`/path/to/site/current/web/` if using deploys)
+3. Add theme(s) in `public/app/themes` as you would for a normal WordPress site. You can use [Rafadiot theme](https://github.com/minhtuanchannhan/rafadiot).
+4. Set your site vhost document root to `/path/to/site/public/` (`/path/to/site/current/public/` if using deploys)
 5. Access WP admin at `https://example.com/back_office/wp-admin`

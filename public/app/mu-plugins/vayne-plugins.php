@@ -13,12 +13,12 @@
  * Disable index if isn't production...
  */
 if (defined('WP_ENV') && WP_ENV !== 'production' && !is_admin()) {
-    add_action('pre_option_blog_public', '__return_zero');
+	add_action('pre_option_blog_public', '__return_zero');
 }
 
 /**
  * Register theme directory...
  */
 if (!defined('WP_DEFAULT_THEME')) {
-    register_theme_directory(ABSPATH . 'wp-content/themes');
+	register_theme_directory(ABSPATH . 'wp-content/themes');
 }

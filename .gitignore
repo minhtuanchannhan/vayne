@@ -1,14 +1,17 @@
+# Editor
+/.idea
+
 # Application
-web/app/plugins/*
-!web/app/plugins/.gitkeep
-web/app/upgrade
-web/app/uploads/*
-!web/app/uploads/.gitkeep
+public/app/plugins/*
+!public/app/plugins/.gitkeep
+public/app/upgrade
+public/app/uploads/*
+!public/app/uploads/.gitkeep
 
 # WordPress
-web/back_office
-web/.htaccess
-web/*.conf
+public/back_office
+public/.htaccess
+public/*.conf
 
 # Dotenv
 .env
@@ -19,7 +22,7 @@ web/*.conf
 /vendor
 
 # Cache
-/web/app/wflogs
-/web/app/advanced-cache.php
-/web/app/cache
-/web/app/w3tc-config
+/public/app/wflogs
+/public/app/advanced-cache.php
+/public/app/cache
+/public/app/w3tc-config

@@ -1,61 +1,64 @@
 {
-    "name": "rafadiot/vayne",
-    "type": "project",
-    "license": "MIT",
-    "description": "Vayne is a folder structure for Wordpress implement Bedrock.",
-    "authors": [
-        {
-            "name": "Tuan Le Minh",
-            "email": "minhtuanchannhan@gmail.com",
-            "homepage": "https://github.com/rafadiot"
-        }
-    ],
-    "keywords": [
-        "vayne",
-        "rafadiot",
-        "wordpress folder structure",
-        "bedrock"
-    ],
-    "support": {
-        "issues": "https://github.com/rafadiot/vayne/issues"
-    },
-    "config": {
-        "preferred-install": "dist"
-    },
-    "require": {
-        "php": ">=7.1",
-        "composer/installers": "^1.4",
-        "vlucas/phpdotenv": "^3.0.0",
-        "oscarotero/env": "^1.1.0",
-        "roots/wordpress": "5.1.1",
-        "roots/wp-config": "1.0.0",
-        "roots/wp-password-bcrypt": "1.0.0",
-        "timber/timber": "^1.9"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "^3.0.2",
-        "roave/security-advisories": "dev-master"
-    },
-    "extra": {
-        "installer-paths": {
-            "web/app/mu-plugins/{$name}/": [
-                "type:wordpress-muplugin"
-            ],
-            "web/app/plugins/{$name}/": [
-                "type:wordpress-plugin"
-            ],
-            "web/app/themes/{$name}/": [
-                "type:wordpress-theme"
-            ]
-        },
-        "wordpress-install-dir": "web/back_office"
-    },
-    "scripts": {
-        "post-root-package-install": [
-            "php -r \"copy('.env.example', '.env');\""
-        ],
-        "test": [
-            "phpcs"
-        ]
-    }
+	"name": "rafadiot/vayne",
+	"type": "project",
+	"license": "MIT",
+	"description": "Vayne is a folder structure for Wordpress implement Bedrock.",
+	"authors": [
+		{
+			"name": "Tuan Le Minh",
+			"email": "minhtuanchannhan@gmail.com",
+			"homepage": "https://github.com/rafadiot"
+		}
+	],
+	"keywords": [
+		"vayne",
+		"rafadiot",
+		"wordpress folder structure",
+		"bedrock"
+	],
+	"support": {
+		"issues": "https://github.com/rafadiot/vayne/issues"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+		"php": ">=7.1",
+		"composer/installers": "^1.4",
+		"vlucas/phpdotenv": "^3.0.0",
+		"oscarotero/env": "^1.1.0",
+		"roots/wordpress": "5.1.1",
+		"roots/wp-config": "1.0.0",
+		"roots/wp-password-bcrypt": "1.0.0",
+		"timber/timber": "^1.9"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.0.2",
+		"roave/security-advisories": "dev-master"
+	},
+	"extra": {
+		"installer-paths": {
+			"web/app/mu-plugins/{$name}/": [
+				"type:wordpress-muplugin"
+			],
+			"web/app/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			],
+			"web/app/themes/{$name}/": [
+				"type:wordpress-theme"
+			]
+		},
+		"wordpress-install-dir": "public/back_office"
+	},
+	"scripts": {
+		"post-root-package-install": [
+			"php -r \"copy('.env.example', '.env');\""
+		],
+		"test": [
+			"phpcs"
+		]
+	}
 }
